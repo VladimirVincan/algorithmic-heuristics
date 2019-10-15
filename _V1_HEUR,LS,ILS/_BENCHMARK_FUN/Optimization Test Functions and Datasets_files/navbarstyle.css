@@ -1,0 +1,32 @@
+html {
+   background-color: white; } /* color behind webpage */
+html, body {
+   margin: 0;                 /* whitespace around body */
+   padding: 0; }              /* whitespace around body */
+
+
+#navbar {
+   width: 12em;                 /* width of object (doesn't affect button width) */
+   margin: 0;                  
+   padding: 0;
+   float: left;                 /* puts navigation bar to the left of content, instead of above */
+   display: inline;
+   }               
+#navbar ul {
+   list-style-type: none;        /* no bullets */
+   margin: 0 0;                  /* whitespace around list, within navigation bar object */
+   padding: 0 0; }               /* padding within list, within navigation bar object */
+#navbar ul li a:link, a:visited {
+   display: block;               /* entire button is clickable, not just word */
+   width: 12em;                  /* width of each button */
+   padding: 0.4em 0.1em;         /* vertical and horizontal padding (affects button size) */
+   margin: 0.1em 0;             /* vertical and horizontal whitespace between buttons */
+   background-color: #B00000;    /* button colour */
+   color: #FFFFFF;               /* text colour */  
+   text-align: center;           /* text alignment within button */
+   text-decoration: none;        /* don't underline links */
+   text-transform: uppercase;
+   font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif; }
+#navbar ul li a:hover {
+   background-color: #680000;
+   color: #FFFFFF; }             /* button colour when you hover over it */

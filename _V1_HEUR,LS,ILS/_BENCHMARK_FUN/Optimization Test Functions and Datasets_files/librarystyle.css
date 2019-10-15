@@ -1,0 +1,178 @@
+html {
+   background-color: #A6A6A6; /* color behind webpage */ }
+
+
+#main {
+   background-color: #FFFFFF;           /* color of webpage */
+   width: 62em;                         /* width of webpage */
+   margin: 0.5em auto;                  /* top margin, and sides (auto is centered) */
+   border: 1em solid white;             /* borders around webpage */
+   border-top-left-radius: 0.2em 0.2em; /* rounded corners */
+   border-top-right-radius: 0.2em 0.2em;
+   border-bottom-left-radius: 0.2em 0.2em;
+   border-bottom-right-radius: 0.2em 0.2em; }
+
+
+#webtitle {
+   text-align: center;     /* centered title */
+   line-height: 2em;       /* whitespace between lines */
+   margin-top: 2em;
+   margin-bottom: 2.2em;
+   font-family: Verdana; } /* title font */
+#webtitle a:link {
+   display: block;
+   text-decoration: none;  /* don't underline link */
+   color: black; }         /* text colour */   
+#webtitle a:visited {
+   text-decoration: none;  /* don't underline link */
+   color: black; }         /* text colour */
+
+#subtitle {
+   font-size: 1.6em; }
+
+
+#bar {
+   height: 30em;  /* height of navigation bar frame */
+   width: 13em;   /* width of navigation bar frame */
+   border: none;
+   float: left;                 /* puts navigation bar to the left of content, instead of above */
+   display: inline; }
+	  
+#fix {
+   clear: both; }
+
+
+#content {
+   padding: 0 0;        /* vertical and horizontal padding within content object */
+   color: black;        /* text colour */
+   background-color: white;
+   font-size: 0.9em;
+   font-family: Helvetica;
+   margin-right: 3em;
+   margin-left: 18em; } /* whitespace to left of content object */
+
+#title {
+   font-size: 1em;
+   padding: 0 0;
+   color: #2B4F81; }
+#title a:link {
+   text-decoration: none;  /* don't underline links */
+   color: #2B4F81; }         /* text colour */   
+#title a:visited {
+   text-decoration: none;  /* don't underline links */
+   color: #2B4F81; }         /* text colour */
+
+#name {
+   text-transform: uppercase;
+   line-height: 1em; } /* adjusts the amount of whitespace below and above */
+
+#info {
+   border-style: none; } /* no border around text object */
+
+#functionlist ol {
+   margin: 1.5em 0;               /* whitespace around list, within function list object */
+   padding: 0 0;                  /* vertical and horizontal padding */   
+   counter-reset: item;           /* for left-aligning text and numbers: sets counter */
+   list-style-position: inside; } /* prevents numbers from being outside object */
+#functionlist ol li {
+   display: block; }              /* for left-aligning text and numbers: removes numbers */
+#functionlist ol li:before {      /* for left-aligning text and numbers: inserts numbers with dots and spacing */
+   content: counter(item) ". ";   
+   counter-increment: item;
+   width: 1.5em;
+   display: inline-block; }
+#functionlist ol li a:link {
+   padding: 0 0;                  /* vertical and horizontal padding */   
+   margin: 0.5em;                 /* distance from number */   
+   line-height: 1.5em;            /* adds whitespace between lines */
+   color: #2B4F81; }
+#functionlist ol li a:visited {
+   padding: 0 0;                  /* vertical and horizontal padding */   
+   margin: 0.5em;                 /* distance from number */   
+   line-height: 1.5em;            /* adds whitespace between lines */
+   color: purple; }
+
+#links a:link {
+   pudding: 0 0;       /* vertical and horizontal padding */
+   line-height: 1.8em; /* adds whitespace between lines */
+   color: #2B4F81; }
+#links a:visited {
+   padding: 0 0;       /* vertical and horizontal padding */
+   line-height: 1.8em; /* adds whitespace between lines */
+   color: purple; } 
+
+#table {
+   border: 0.1em solid black;   /* outside border */
+   border-collapse: collapse; } /* prevents it from doing double border lines */
+#table td {
+   border: 0.1em solid black;  /* inside borders */
+   padding: 0.3em 0.5em;}      /* vertical and horizontal spacing within cells */
+
+#codes a:link {
+   pudding: 0 0;       /* vertical and horizontal padding */
+   line-height: 1.8em; /* adds whitespace between lines */
+   color: #2B4F81; }
+#codes a:visited {
+   padding: 0 0;       /* vertical and horizontal padding */
+   line-height: 1.8em; /* adds whitespace between lines */
+   color: purple; } 
+
+.num {
+   padding-right: 0.2em; } /* spacing for large numbers */
+
+.sum {
+    position: relative;
+    font-size: 1.5em;
+    display: inline-block;
+    line-height: 0.7em;
+    vertical-align: middle;
+}
+.sum:before {
+    font-size: 0.5em;
+    display: block;
+    left: 0;
+    top: 0;
+    content: "10";
+}
+.sum:after {
+    font-size: 0.5em;
+    display: block;
+    left: 0;
+    bottom: 0;
+    content: "i=1";
+}
+
+
+#line {
+   width: auto;    /* spans width of entire content object */
+   margin: 0 auto; /* top margin, and sides (auto is centered) */
+   height: 0.5em;
+   background-color: #2B4F81; }
+
+.update {
+   text-align: center; }
+.update span {
+   display: none; }
+.update:after {
+   content: 'Last Updated: January 2015';
+   position: center;
+   color: grey;
+   font-size: 0.9em; }
+
+.authors {
+   text-align: center; }
+.authors span {
+   display: none; }
+.authors:after {
+   content: 'Authors: Sonja Surjanovic & Derek Bingham, Simon Fraser University';
+   color: grey;
+   font-size: 0.9em; }
+
+.copy {
+   text-align: center; }
+.copy span {
+   display: none; }
+.copy:after {
+   content: '\00A9  Derek Bingham 2013';
+   color: grey;
+   font-size: 0.9em; }
