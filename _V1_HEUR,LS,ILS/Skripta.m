@@ -21,8 +21,8 @@ fprintf('\n');
 func = Primer(n);
 
 n = 0;
-fprintf('Izaberite algoritam\n1) Random search algorithm\n2) Adaptive random search algorithm\n3) 1 i 2 kombinovano\n');
-while (n < 1 | n > 3)
+fprintf('Izaberite algoritam\n1) Random search algorithm\n2) Adaptive random search algorithm\n3) 1 i 2 kombinovano\n4) Variable neighborhood search sa Random search algoritmom\n');
+while (n < 1 | n > 4)
     n = input('n = ');
 end
 fprintf('\n');
@@ -39,4 +39,10 @@ switch(n)
     case 3
         [best_result, best_pair] = RandomSearchAlgorithm(func, min_b, max_b);
         AdaptiveRandomSearch(func, min_b, max_b, best_result, best_pair);
+    case 4
+        % neighborhoods = [-5 -4; ; -4 -3; -3 -2; -2 -1; -1 0; 0 1; 1 2; 2 3; 3 4; 4 5]
+        k_max = 10;
+        L = 10;
+        stop_iterations = 100;
+        [best_result, best_pair] = VariableNeighborhoodSearch(func, stop_iterations, k_max, L, min_b, max_b);
 end
