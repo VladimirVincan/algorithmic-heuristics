@@ -1,6 +1,6 @@
 %Cilj: naci MIS (maximal independent set) sto vece kardinalnosti
 disp('Pokrenuti nad:');
-disp('0 -> test matricom (unetom ru?no u kodu ispod):');
+disp('0 -> test matricom (unetom rucno u kodu ispod):');
 disp('1 -> benchmark grafovima');
 b = input('# ');
 if(b)
